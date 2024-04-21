@@ -102,10 +102,11 @@ svg:hover {
                nav
 ==================================*/
 #nav {
-    background-image: url('../img/Picture9.png');
+    /* background-image: url('../img/Picture42.png'); */
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
+    background: linear-gradient(0deg, #D4EFBE 0%, #e3f5cb 100%);
 }
 
 .navbar {
@@ -732,7 +733,7 @@ svg:hover {
     max-width: 220px;
     height: 50px;
     width: 100%;
-    background: #49D38E;
+    background: #2EAC6D;
     margin-inline: auto;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -972,6 +973,8 @@ svg:hover {
     margin-bottom: 20px;
 }
 
+
+
 .team-header {
     font-family: 'Somar';
     font-style: normal;
@@ -1076,6 +1079,16 @@ svg:hover {
     margin-bottom: 20px;
 }
 
+#innovators .gradient {
+    background: #fdfcfc;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 20px;
+}
+
 .parent-inovator {
     max-width: 260px;
     width: 100%;
@@ -1101,7 +1114,6 @@ svg:hover {
     bottom: 0px;
     height: 178px;
     width: 260px;
-    z-index: -1;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -1113,6 +1125,8 @@ svg:hover {
 .img-innovator img {
     width: 263px;
     height: 260px;
+    position: relative;
+    z-index: 1;
 }
 
 .name-iovetor {
@@ -1131,6 +1145,7 @@ svg:hover {
     margin-inline: auto;
     position: relative;
     top: -20px;
+    z-index: 2;
 }
 
 .text-head-innvoator {
@@ -1161,6 +1176,8 @@ svg:hover {
     color: #000;
     line-height: 30px;
     display: flex;
+    max-width: 700px;
+    margin-right: 75px;
 }
 
 .text-p-invatoor p img {
@@ -1188,7 +1205,7 @@ svg:hover {
 
 .text-last-card {
     margin-right: 15px;
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 .text-last-card p {
@@ -1242,7 +1259,7 @@ svg:hover {
 
 .article-head-div a {
     font-family: 'Somar';
-    background: #49D38E;
+    background: #2EAC6D;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -1292,6 +1309,7 @@ svg:hover {
 .img-aricle-card img {
     object-fit: cover;
     width: 100%;
+    height: 100%;
 }
 
 .body-article-card {
@@ -1307,6 +1325,10 @@ svg:hover {
     justify-content: space-between;
     margin-bottom: 0px;
     line-height: 30px;
+}
+
+.p-title-aricle svg {
+    margin-right: 3px;
 }
 
 .text-aricle-card p {
@@ -1339,7 +1361,7 @@ svg:hover {
 #newsay {
     min-height: 400px;
     padding-block: 20px;
-    background-image: url('../img/Picture9.png');
+    background-image: url('../img/Picture3.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1424,6 +1446,14 @@ svg:hover {
     -moz-transition: all 0.3s linear;
     -ms-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
+}
+
+#newsay-about .owl-nav .owl-prev {
+    margin-right: -40px;
+}
+
+#newsay-about .owl-nav .owl-next {
+    margin-left: -40px;
 }
 
 #newsay-about .owl-nav .owl-prev:hover,
@@ -1531,6 +1561,7 @@ svg:hover {
     text-align: center;
     margin-bottom: 25px;
 }
+
 .text-new-scale .p-text-new-scale {
     font-family: 'Somarmedium';
     color: #000;
@@ -1538,17 +1569,18 @@ svg:hover {
     text-align: center;
     margin-bottom: 25px;
 }
+
 .send-code {
     display: flex;
     justify-content: center;
-    padding-top: 25px;
+    padding-block: 25px;
 }
 
 .enter-code-parent {
     max-width: 400px;
     width: 100%;
     padding: 10px;
-    border: 2px solid #ffce3b;
+    border: 2px solid #2EAC6D;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -1568,7 +1600,7 @@ svg:hover {
 
 .input-div input {
     height: 40px;
-    border: 2px solid #ffce3b;
+    border: 2px solid #2EAC6D;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -1578,19 +1610,21 @@ svg:hover {
     width: 100%;
 }
 
+
+
 .input-div {
     display: flex;
 }
 
 .input-div button {
     font-family: 'Somar';
-    color: #000;
+    color: #fff;
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 40px;
-    background: #ffce3b;
+    background: #2EAC6D;
     border: none;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -1605,15 +1639,27 @@ svg:hover {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
     margin: 0;
-    /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 input[type=number] {
     -moz-appearance: textfield;
     /* Firefox */
+}
+
+
+.input-div input:focus {
+    border: 2px solid #ECBB36 !important;
+    outline: 0px;
+
+}
+
+.input-div input::placeholder {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    margin-right: -50px;
 }
 
 .price-of-offer {
@@ -1625,7 +1671,7 @@ input[type=number] {
     align-items: center;
     max-width: 140px;
     width: 100%;
-    border: 2px solid #ffce3b;
+    border: 2px solid #2EAC6D;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -1637,7 +1683,7 @@ input[type=number] {
 
 .start-scale-now {
     font-family: 'Somar';
-    color: #000;
+    color: #fff;
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -1650,7 +1696,8 @@ input[type=number] {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     margin-right: 15px;
-    background: #ffce3b;
+    background: #2EAC6D;
+    border: none;
 }
 
 .head-of-properties {
@@ -1678,6 +1725,11 @@ input[type=number] {
     min-height: 400px;
     height: 100%;
     margin-inline: auto;
+
+}
+
+.margin-report {
+    margin-block: 20px;
 }
 
 .head-name-report h4 {
@@ -1691,13 +1743,26 @@ input[type=number] {
     color: #000;
     font-size: 22px;
     display: flex;
+    margin-bottom: 10px;
 }
 
 .icon-check-report {
-    color: #ffce3b;
+    color: #2EAC6D;
     font-size: 15px;
     margin-left: 15px;
     margin-top: 8px;
+}
+
+.questionaire-icon .inter-balance {
+    background: #fdfcfc;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    width: fit-content;
+    padding: 20px;
+    margin-inline: auto;
 }
 
 /* =============================
@@ -2817,7 +2882,7 @@ h2 {
     -moz-transition: all 0.3s linear;
     -ms-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
-    height: 576px;
+    height: 555px;
 }
 
 @media (max-width:991px) {
@@ -3109,7 +3174,7 @@ h2 {
     align-items: center;
     max-width: 120px;
     height: 45px;
-    background: #49D38E;
+    background: #2EAC6D;
     border-radius: 10px;
     font-family: 'Somar';
     font-size: 20px;
@@ -3195,9 +3260,64 @@ h2 {
     margin-left: 28px;
 }
 
+.social-links {
+    margin-block: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.social-links a {
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    width: 35px;
+    height: 35px;
+    background: #979797;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 17px;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    overflow: hidden;
+}
+
+.social-links a svg {
+    font-size: 20px;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+.social-links a:hover {
+    background: #2EAC6D;
+}
+
+.social-links a:hover svg {
+    animation: torightleft 0.5s linear;
+    -webkit-animation: torightleft 0.5s linear;
+}
+
 .sub-footer {
     border-top: 3px solid #ffce3b;
     border-image: linear-gradient(90deg, #ffce3b 20%, #2EAC6D 50%, #a1e6a2 80%, #486df6 100%) 1;
+}
+
+.show-in-mobile-foot {
+    visibility: hidden;
 }
 
 /*start login page */
@@ -3205,15 +3325,17 @@ h2 {
              register
    ============================= */
 #register {
-    margin-top: 73px;
+    margin-top: 90px;
 }
 
 .cont-regist {
-    height: 235px;
+    /* height: 235px; */
     background: linear-gradient(180deg, #16824C 0%, rgba(148, 228, 188, 0.51) 100%), url('../img/Rectangle\ 8977.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    visibility: hidden;
+    height: 20px;
 }
 
 .p-regist {
@@ -3748,6 +3870,9 @@ input:focus {
 /* =============================
              coach
    ============================= */
+   #coach {
+    padding-top: 20px;
+   }
 .cont-coach {
     height: 235px;
     background: linear-gradient(180deg, #16824C 0%, rgba(148, 228, 188, 0.51) 100%), url('../img/Rectangle\ 8977\ \(2\).png');
@@ -3794,13 +3919,13 @@ input:focus {
     border: 2px solid #2EAC6D;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    padding: 14px 36px;
-    width: 288px;
+    padding: 10px 20px;
+    width: 240px;
     text-align: center;
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 38px;
     color: #FFFFFF;
     margin-top: 30px;
@@ -5437,11 +5562,13 @@ input:focus {
              data
    ============================= */
 .cont-data {
-    min-height: 235px;
+    /* min-height: 235px; */
     background: linear-gradient(180deg, #16824C 0%, rgba(148, 228, 188, 0.51) 100%), url('../img/Rectangle\ 8979.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 20px;
+    visibility: hidden;
 }
 
 .parent-data-2 {
@@ -7455,12 +7582,16 @@ input[type="radio"]:hover {
         display: block;
     }
 
+    .show-in-mobile-foot {
+        visibility: visible;
+    }
+
     .show-in-desktop {
         display: none;
     }
 
     .text-limit {
-        justify-content: start;
+        justify-content: center;
     }
 
     .parent-inovator {
@@ -7486,7 +7617,7 @@ input[type="radio"]:hover {
 
     .list-of-report li {
 
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .container-of-report {
@@ -7495,6 +7626,35 @@ input[type="radio"]:hover {
 
     .icon-check-report {
         margin-left: 10px;
+    }
+}
+
+@media(max-width:590px) {
+    #newsay-about .owl-nav {
+        display: flex;
+        position: relative;
+        transform: translateY(-50%);
+        left: 0;
+        color: #FFFFFF;
+        font-size: 15px;
+        z-index: 999;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        width: 100%;
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    #newsay-about .owl-nav .owl-prev {
+        margin-right: 0px;
+        margin-left: 15px;
+    }
+
+    #newsay-about .owl-nav .owl-next {
+        margin-left: 0px;
+        margin-right: 15px;
     }
 }
 
@@ -7524,14 +7684,16 @@ input[type="radio"]:hover {
 
     .list-report-short li {
         font-size: 20px;
-        max-width: 225px;
+        max-width: 200px;
     }
 
     .card-content {
         padding-right: 25px;
     }
 
-
+    .get-behicel {
+        padding-right: 25px;
+    }
 
     .sub-collect-when img {
         margin-left: 0px;
@@ -7539,11 +7701,6 @@ input[type="radio"]:hover {
 
     .sub-collect-when span {
         font-size: 14px;
-    }
-
-    .get-behicel span {
-
-        font-size: 15px;
     }
 
     #team-members .owl-nav {
@@ -7601,6 +7758,11 @@ input[type="radio"]:hover {
     .text-slide h1 {
         font-size: 35px;
     }
+
+    .questionaire-icon .inter-balance {
+        padding: 0px;
+    }
+
 }
 
 @media(max-width:320px) {
@@ -7814,7 +7976,7 @@ input[type="radio"]:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2EAC6D;
+    background: #49D38E;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
