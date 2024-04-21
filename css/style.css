@@ -106,7 +106,8 @@ svg:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    background: linear-gradient(0deg, #D4EFBE 0%, #e3f5cb 100%);
+    background: linear-gradient(-90deg, #D4EFBE , #F1F7CC
+    );
 }
 
 .navbar {
@@ -286,13 +287,13 @@ svg:hover {
     }
 }
 
-.scrolled {
-    /* background: #fff; */
+/* .scrolled {
+    background: #fff;
     background-image: url('../img/Picture9.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
+} */
 
 /* =============================
            Discover yourself
