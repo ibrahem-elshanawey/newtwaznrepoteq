@@ -1191,7 +1191,7 @@ svg:hover {
 .text-head-innvoator img {
     margin-left: 10px;
     width: 60px;
-    background: #2EAC6D;
+    background: #f1faec;
     border-radius: 5px;
 }
 
@@ -1199,6 +1199,16 @@ svg:hover {
     font-family: 'Somar';
     font-size: 25px;
     color: #000;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+.text-head-innvoator span:hover {
+    color: #2EAC6D;
+    cursor: pointer;
 }
 
 .text-p-invatoor p {
@@ -3276,7 +3286,7 @@ h2 {
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     transition: all 0.3s linear;
 }
 
@@ -3396,7 +3406,7 @@ h2 {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background: #fdfcfc;
+    background: #f1faec;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -3405,6 +3415,10 @@ h2 {
     margin-bottom: 20px;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.contain-new-footer .btn-footer {
+    margin-right: 17px;
 }
 
 .img-twazn-log img {
