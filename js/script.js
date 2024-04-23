@@ -57,16 +57,11 @@ $(document).ready(function () {
             }
         });
     });
-    const nav = document.querySelector('nav');
-    // Listen for the scroll event
-    window.addEventListener('scroll', () => {
-        // Check if the user has scrolled past a certain threshold (e.g., 100px)
-        if (window.scrollY > 100) {
-            // Add a class to the navigation element
-            nav.classList.add('scrolled');
-        } else {
-            // Remove the class from the navigation element
-            nav.classList.remove('scrolled');
-        }
-    });
+   
+    $(function() {
+        $('nav .nav-item .nav-link').each(function() {
+          var isActive = this.pathname === location.pathname;
+          $(this).toggleClass('active', isActive);
+        });
+      });
 });

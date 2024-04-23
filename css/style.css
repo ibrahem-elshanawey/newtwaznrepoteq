@@ -106,8 +106,7 @@ svg:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    background: linear-gradient(-90deg, #D4EFBE , #F1F7CC
-    );
+    background: linear-gradient(-90deg, #D4EFBE, #F1F7CC);
 }
 
 .navbar {
@@ -133,18 +132,25 @@ svg:hover {
 
 }
 
+.navbar-nav {
+    padding-right: 0px;
+    margin-right: 12%;
+}
+
 @media(max-width:991px) {
     .navbar-collapse.collapse.show {
         overflow-y: auto;
         max-height: 60vh;
         -webkit-overflow-scrolling: touch;
     }
+
+    .navbar-nav {
+        margin-right: 0%;
+    }
 }
 
 
-.navbar-nav {
-    padding-right: 0px;
-}
+
 
 
 
@@ -161,7 +167,7 @@ svg:hover {
     font-size: 20px !important;
     line-height: 29px;
     color: #000000;
-
+    position: relative;
 }
 
 @-moz-document url-prefix() {
@@ -186,6 +192,17 @@ svg:hover {
 
 .nav-item .nav-link.active {
     color: #2EAC6D;
+}
+
+.nav-item .nav-link.active::before {
+    content: "";
+    position: absolute;
+    background: #2EAC6D;
+    right: 0;
+    width: 12px;
+    height: 3px;
+    border-radius: 10px;
+    bottom: -3px;
 }
 
 .nav-item a.nav-link:hover {
@@ -260,6 +277,7 @@ svg:hover {
     .nav-item a.nav-link {
         margin-top: 20px;
         margin-bottom: 20px;
+        display: inline-block;
     }
 
     .navbar-collapse {
@@ -376,7 +394,7 @@ svg:hover {
 
 .dependense {
     position: absolute;
-    left: 15%;
+    left: 20px;
     bottom: 20px;
 }
 
@@ -844,14 +862,21 @@ svg:hover {
     display: flex;
     width: 100%;
     max-width: 300px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .icon-check {
     margin-left: 10px;
-    font-size: 15px;
-    margin-top: 10px;
-    color: #fff;
+    font-size: 13px;
+    margin-top: 5px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background: #ffcc3a;
+    border-radius: 50%;
 }
 
 .model-button {
@@ -876,6 +901,7 @@ svg:hover {
     border: none;
     width: 100%;
     background: #fff;
+    padding-bottom: 4.5px;
 }
 
 .collect-when-subscribe {
@@ -899,19 +925,26 @@ svg:hover {
     font-family: 'Somarsemibold';
     color: #000;
     font-size: 20px;
+    transition: all 0.3s linear;
+}
+
+.sub-collect-when span:hover {
+    color: #2EAC6D;
+    cursor: pointer;
 }
 
 .text-limit {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%
+    height: 100%;
+    flex-direction: column;
 }
 
 .text-limit p {
     font-family: 'Somar';
     color: #000;
-    font-size: 40px;
+    font-size: 30px;
 
 }
 
@@ -931,34 +964,18 @@ svg:hover {
     position: relative;
     z-index: 2;
     padding-block: 30px;
-    padding-right: 50px;
     flex-grow: 1;
 }
 
 .get-behicel span {
     font-family: 'Somar';
     color: #fff;
-    font-size: 25px;
+    font-size: 40px;
 }
 
-.model-button2 a {
-    font-family: 'Somar';
-    color: #49D38E;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 150px;
-    height: 50px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border: none;
-    width: 100%;
-    background: white;
-    padding-inline: 20px;
+.get-behicel .model-button a {
+    margin-right: 50px;
+
 }
 
 .icon-check2 {
@@ -1002,6 +1019,13 @@ svg:hover {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border: 1px solid #49D38E;
+    transition: all 0.3s linear;
+    overflow: hidden;
+}
+
+.team-member img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .team-member {
@@ -1015,9 +1039,13 @@ svg:hover {
     font-size: 23px;
     line-height: 56px;
     color: #000000;
+    transition: all 0.3s linear;
 }
 
-
+.team-member p:hover {
+    color: #2EAC6D;
+    cursor: pointer;
+}
 
 #team-members .owl-nav {
     display: flex;
@@ -1163,6 +1191,8 @@ svg:hover {
 .text-head-innvoator img {
     margin-left: 10px;
     width: 60px;
+    background: #2EAC6D;
+    border-radius: 5px;
 }
 
 .text-head-innvoator span {
@@ -1201,7 +1231,7 @@ svg:hover {
     display: flex;
     align-items: center;
     margin-inline: auto;
-    margin-top: 15px;
+    margin-block: 15px;
 }
 
 .text-last-card {
@@ -1311,6 +1341,11 @@ svg:hover {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    transition: all 0.3s linear;
+}
+
+.card-articles:hover .img-aricle-card img {
+    transform: scale(1.05);
 }
 
 .body-article-card {
@@ -1328,8 +1363,18 @@ svg:hover {
     line-height: 30px;
 }
 
+.text-aricle-card p:hover {
+    color: #2EAC6D;
+}
+
 .p-title-aricle svg {
     margin-right: 3px;
+    transition: all 0.3s linear;
+
+}
+
+.p-title-aricle svg:hover {
+    color: #2EAC6D;
 }
 
 .text-aricle-card p {
@@ -1342,6 +1387,7 @@ svg:hover {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    transition: all 0.3s linear;
 }
 
 .question-article-card {
@@ -1478,6 +1524,7 @@ svg:hover {
     font-size: 25px;
     padding-inline: 0px;
     text-align: right;
+    transition: all 0.3s linear;
 }
 
 .accordion-button span {
@@ -1496,6 +1543,10 @@ svg:hover {
     box-shadow: none;
 }
 
+.accordion-button:hover {
+    color: #2EAC6D;
+}
+
 .accordion-button::after {
     margin-right: auto;
     margin-left: 0px;
@@ -1505,14 +1556,14 @@ svg:hover {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     background-size: 1rem;
     background-position: center;
 }
 
 .accordion-button:not(.collapsed) {
-    color: #000;
+    color: #2EAC6D;
     background-color: #fff;
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
 }
@@ -3160,9 +3211,17 @@ h2 {
 }
 
 
+.footer-sub-p {
+    font-family: 'Somarmedium';
+    line-height: 20px;
+    color: #000;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 25px;
+}
 
 .p-footer {
-    font-family: 'Somarsemibold';
+    font-family: 'Somar';
     line-height: 22px;
     color: #000;
     margin-top: 25px;
@@ -3188,6 +3247,7 @@ h2 {
     -o-border-radius: 10px;
     width: 100%;
     margin-bottom: 10px;
+    min-width: 100px;
 }
 
 
@@ -3195,7 +3255,7 @@ h2 {
     font-family: 'Somar';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 20px;
     color: #000;
     margin-bottom: 8px;
@@ -3217,6 +3277,11 @@ h2 {
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 8px;
+    transition: all 0.3s linear;
+}
+
+.links-foot li:hover {
+    transform: translateX(-5px);
 }
 
 .links-foot li a {
@@ -3315,10 +3380,36 @@ h2 {
 .sub-footer {
     border-top: 3px solid #ffce3b;
     border-image: linear-gradient(90deg, #ffce3b 20%, #2EAC6D 50%, #a1e6a2 80%, #486df6 100%) 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .show-in-mobile-foot {
     visibility: hidden;
+}
+
+
+.contain-new-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: #fdfcfc;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.img-twazn-log img {
+    max-width: 160px;
+    opacity: 0.5;
 }
 
 /*start login page */
@@ -3871,9 +3962,10 @@ input:focus {
 /* =============================
              coach
    ============================= */
-   #coach {
+#coach {
     padding-top: 20px;
-   }
+}
+
 .cont-coach {
     height: 235px;
     background: linear-gradient(180deg, #16824C 0%, rgba(148, 228, 188, 0.51) 100%), url('../img/Rectangle\ 8977\ \(2\).png');
@@ -7657,6 +7749,10 @@ input[type="radio"]:hover {
         margin-left: 0px;
         margin-right: 15px;
     }
+
+    .link-email {
+        padding-right: 10px;
+    }
 }
 
 @media(max-width:567px) {
@@ -7692,8 +7788,8 @@ input[type="radio"]:hover {
         padding-right: 25px;
     }
 
-    .get-behicel {
-        padding-right: 25px;
+    .get-behicel .model-button a {
+        margin-right: 25px;
     }
 
     .sub-collect-when img {
@@ -7722,9 +7818,7 @@ input[type="radio"]:hover {
         font-size: 13px;
     }
 
-    .head-foot h6 {
-        font-size: 17px;
-    }
+
 
     .start-scale-now {
         height: 82px;
@@ -7764,9 +7858,24 @@ input[type="radio"]:hover {
         padding: 0px;
     }
 
+    .head-foot h6 {
+        font-size: 17px;
+    }
+
+    .footer-sub-p {
+        font-size: 15px;
+    }
+
+    .contain-new-footer {
+        justify-content: space-around;
+    }
 }
 
-@media(max-width:320px) {
+@media(max-width:390px) {
+    .sub-footer {
+        justify-content: center;
+    }
+
     .btn-doz {
         font-size: 14px;
     }
