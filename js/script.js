@@ -57,11 +57,16 @@ $(document).ready(function () {
             }
         });
     });
-   
-    $(function() {
-        $('nav .nav-item .nav-link').each(function() {
-          var isActive = this.pathname === location.pathname;
-          $(this).toggleClass('active', isActive);
+
+    $(function () {
+        $('nav .nav-item .nav-link').each(function () {
+            var isActive = this.pathname === location.pathname;
+            $(this).toggleClass('active', isActive);
         });
-      });
+    });
+    const sidebar = document.getElementById('sidebar');
+    const toggleButton = document.getElementById('toggleButton');
+    toggleButton.addEventListener('click', function () {
+        sidebar.classList.toggle('closed');
+    });
 });
