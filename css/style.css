@@ -4435,6 +4435,7 @@ input:focus {
     .img-detail {
         display: flex;
         justify-content: center;
+        margin-top: 35px;
     }
 }
 
@@ -5846,6 +5847,11 @@ input:focus {
 
 .cont-reqest-2 {
     text-align: center;
+}
+
+.cont-reqest-2 img {
+    max-width: 500px;
+    width: 100%;
 }
 
 .p-request-2 {
@@ -8157,9 +8163,11 @@ input[type="radio"]:hover {
     .text-about {
         margin-top: 30px;
     }
+
     #blog {
         margin-top: 100px !important;
     }
+
     .card {
         margin-bottom: 20px;
     }
