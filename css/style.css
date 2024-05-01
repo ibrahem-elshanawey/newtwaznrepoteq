@@ -352,6 +352,7 @@ svg:hover {
 }
 
 .photo img {
+    max-width: 100%;
     max-height: calc(100vh - 100px);
     margin-left: 20px;
     width: 100%;
@@ -859,14 +860,13 @@ svg:hover {
     position: absolute;
     width: 150%;
     height: 40px;
-    background: #fcb558;
+    background: #ffcc3a;
     transform: rotate(-45deg) translateY(-20px);
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     font-weight: 600;
-    letter-spacing: 0.1em;
     text-transform: uppercase;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
     font-family: 'Somar';
@@ -5098,6 +5098,18 @@ input:focus {
     color: #FFCB3C;
 }
 
+.img-contacts img {
+    max-width: 300px;
+    width: 100%;
+}
+
+.img-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
 /* start page request */
 /* =============================
              request
@@ -7602,6 +7614,23 @@ input[type="radio"]:hover {
     #sidebar {
         margin-top: -2px;
     }
+
+    .img-contacts {
+        width: 83px;
+        height: 83px;
+        margin-inline: auto;
+        background: #ffd059;
+        padding: 20px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
 }
 
 @media(max-width:441px) {
@@ -8120,7 +8149,8 @@ input[type="radio"]:hover {
     } */
 
     .photo img {
-        height: 72%;
+        height: 65%;
+        bottom: -24px;
     }
 
     .watch-cobon {
@@ -8170,6 +8200,18 @@ input[type="radio"]:hover {
 
     .card {
         margin-bottom: 20px;
+    }
+
+    .img-innovator img {
+        object-fit: cover;
+    }
+
+    .container-of-report {
+        min-height: 300px;
+    }
+
+    .coach-img img {
+        object-fit: cover;
     }
 }
 
@@ -8234,6 +8276,10 @@ input[type="radio"]:hover {
 
     .sub-footer {
         justify-content: center;
+    }
+
+    .head-list p {
+        font-size: 24px;
     }
 }
 

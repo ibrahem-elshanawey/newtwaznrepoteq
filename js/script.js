@@ -69,6 +69,16 @@ $(document).ready(function () {
     toggleButton.addEventListener('click', function () {
         sidebar.classList.toggle('closed');
     });
+    function checkScreenWidth() {
+        if (window.innerWidth <= 576) {
+            sidebar.classList.add('closed');
+        } else {
+            sidebar.classList.remove('closed');
+        }
+    }
+
+    // Call the function initially
+    checkScreenWidth();
     const dashLinks = document.querySelectorAll('.dashboard-menu li a');
 
     // Function to handle link click
