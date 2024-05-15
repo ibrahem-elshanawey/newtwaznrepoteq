@@ -4382,7 +4382,7 @@ input:focus {
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 34px;
     text-align: right;
     color: rgba(47, 64, 70, 0.79);
@@ -4423,8 +4423,15 @@ input:focus {
     cursor: pointer;
 }
 
+.img-detail {
+    margin-inline: auto;
+    width: fit-content;
+}
+
 .img-detail img {
-    width: 75%;
+    max-width: 400px;
+    width: 100%;
+    object-fit: cover;
 }
 
 @media (max-width:991px) {
@@ -8212,6 +8219,10 @@ input[type="radio"]:hover {
 
     .coach-img img {
         object-fit: cover;
+    }
+
+    .p-detail-3 {
+        text-align: center;
     }
 }
 
