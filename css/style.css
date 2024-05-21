@@ -330,7 +330,7 @@ svg:hover {
     background-position: center;
     background-size: cover;
     height: 100vh;
-    min-height: 500px;
+    min-height: 300px;
     position: relative;
 }
 
